@@ -7,7 +7,13 @@
 
 /* ── Custom Cursor ── */
 * {
-  cursor: none !important;
+  /* cursor: none !important; */ /* DISABILITATO: Manteniamo il cursore di sistema per accessibilità, sovrapponendo quello custom */
+}
+
+/* Solo quando il cursore custom è attivo nascondiamo quello di sistema se vogliamo quell'effetto, 
+   ma per ora meglio lasciarli entrambi o nasconderlo solo se siamo sicuri del JS */
+body {
+  cursor: auto;
 }
 
 #custom-cursor {
@@ -336,6 +342,74 @@ section {
 .reveal-delay-4 {
   transition-delay: 0.4s;
 }
+
+/* ── Terminal Styles (New) ── */
+.terminal-container {
+  background: #0d0d1a;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  font-family: var(--font-mono);
+  position: relative;
+}
+
+.terminal-header {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.terminal-dots {
+  display: flex;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.terminal-title {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  flex-grow: 1;
+  text-align: center;
+}
+
+.terminal-body {
+  padding: 20px;
+  min-height: 300px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.terminal-line {
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.terminal-line.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.terminal-prompt { color: var(--gold); font-weight: bold; }
+.terminal-command { color: var(--text-primary); }
+.terminal-output { color: var(--text-secondary); }
+.terminal-success { color: #27c93f; }
+.terminal-highlight { color: var(--gold-light); font-weight: bold; background: rgba(255, 215, 0, 0.1); padding: 2px 5px; border-radius: 4px; }
 
 /* ════════════════════════════════════════════
    NAVBAR

@@ -1,0 +1,457 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="NKHUB: Sviluppo boutique di siti web premium & architetture software ad alte prestazioni. Rigore ingegneristico e design esclusivo.">
+  <meta name="keywords"
+    content="NKHUB, creazione siti web, sito vetrina, sito aziendale, web architect, sviluppo software, domini, hosting premium">
+  <title>NKHUB | Web Architecture & Exclusive Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>">
+</head>
+
+<body>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="nav-logo">
+        <img
+          src="C:\Users\Utente\.gemini\antigravity\brain\e31a55d5-c579-497d-be56-b8e9f64a98da\nkhub_luxury_logo_1773331832069.png"
+          alt="NKHUB Logo" style="height: 40px; border-radius: 4px; margin-right: 10px;">
+        NKHUB<span class="logo-dot">.</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#metodo">Metodo</a>
+        <a href="#pacchetti">Piani Web <span class="nav-badge">Promo</span></a>
+        <a href="#hosting">Infrastruttura</a>
+        <a href="#contatti" class="nav-cta glow-button">Richiedi Analisi</a>
+      </div>
+      <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero">
+    <canvas class="hero-canvas" id="matrixCanvas"></canvas>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge animated-border">
+          <span class="pulse-dot"></span>
+          Offerta Sviluppo a Tempo Limitato
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line">Siti Web Premium per</span>
+          <span class="line">Massimizzare i <span class="gradient-text">Risultati</span></span>
+        </h1>
+
+        <div class="hero-typing" id="heroTyping">
+          <span class="typing-text"></span><span class="cursor"></span>
+        </div>
+
+        <p class="hero-demand-text reveal"
+          style="max-width: 600px; margin: 0 auto 30px auto; color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6;">
+          Sono attualmente molto richiesto e pieno di progetti in coda, ma seleziono accuratamente le prossime attività
+          da supportare. <strong>Troverò sempre il modo migliore per portarti il massimo ritorno
+            sull'investimento</strong> per il tuo locale o azienda.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#pacchetti" class="btn-primary glow-button">
+            Scopri i Pacchetti in Promo →
+          </a>
+          <a href="#contatti" class="btn-secondary">
+            Parliamone Insieme
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number" data-target="100" data-suffix="%">0</div>
+            <div class="stat-label">Focus sull'Obiettivo</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-target="99" data-suffix=",9%">0</div>
+            <div class="stat-label">Uptime Garantito</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-target="7" data-prefix="<" data-suffix=" giorni">0</div>
+            <div class="stat-label">Setup Iniziale</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROCESSO & METODO (INCONTRO) ═══════════ -->
+  <section id="metodo">
+    <div class="container">
+      <div class="process-header reveal">
+        <div class="section-tag">Il Nostro Approccio</div>
+        <h2 class="section-title">Come <span class="gradient-text">Lavoriamo</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Un approccio diretto ed empatico per comprendere a fondo le
+          tue vere necessità aziendali.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-step reveal reveal-delay-1">
+          <div class="step-number">01</div>
+          <h4 class="step-title">Incontro (Fisico o Digitale)</h4>
+          <p class="step-desc"><strong>Hai un negozio o un locale?</strong> Sono disponibilissimo a venire di persona
+            per respirare l'aria della tua attività e capire al meglio cosa ti serve. In alternativa, gestiamo tutto in
+            modo super efficiente via Email o WhatsApp.</p>
+        </div>
+        <div class="timeline-step reveal reveal-delay-2">
+          <div class="step-number">02</div>
+          <h4 class="step-title">Studio della Strategia</h4>
+          <p class="step-desc">Analizziamo la concorrenza e studiamo come posizionare il tuo nuovo asset digitale
+            affinché porti nuovi contatti e richieste concrete.</p>
+        </div>
+        <div class="timeline-step reveal reveal-delay-3">
+          <div class="step-number">03</div>
+          <h4 class="step-title">Sviluppo Tecnico</h4>
+          <p class="step-desc">Strutturiamo la piattaforma con codice pulito, HTML/JS performante o framework moderni,
+            garantendo che non ci siano latenze di caricamento da mobile.</p>
+        </div>
+        <div class="timeline-step reveal reveal-delay-4">
+          <div class="step-number">04</div>
+          <h4 class="step-title">Lancio & Risultati</h4>
+          <p class="step-desc">Mettiamo online la piattaforma e ti forniamo le chiavi per gestire la tua presenza,
+            pronti a monitorare la crescita insieme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PACCHETTI ═══════════ -->
+  <section id="pacchetti">
+    <div class="container">
+      <div class="packages-header reveal">
+        <div class="section-tag">Offerta Limitata</div>
+        <h2 class="section-title">Scegli il <span class="gradient-text">Piano Web</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Piani strutturati sulle tue necessità.<br><strong
+            style="color:var(--gold-light); font-size: 1.2rem; display: block; margin-top: 10px;">🎁 OFFERTA MANODOPERA:
+            Sconto fino al 50% esclusivo sul mio lavoro tecnico se confermiamo entro questo mese!</strong></p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Sito Vetrina Light -->
+        <div class="package-card starter reveal reveal-delay-1 animated-border">
+          <div class="package-badge-mini">💎 Promo Lancio</div>
+          <h3 class="package-name">Sito Vetrina Light</h3>
+          <p class="package-desc">Ideale per freelance e professionisti che vogliono una presenza online immediata e
+            curata.</p>
+          <div class="package-price">
+            <div class="price-discount-tag">🔥 Sconto €200</div>
+            <div
+              style="font-size: 0.9rem; color: var(--text-muted); text-decoration: line-through; margin-bottom: 5px;">
+              Regolare: €499</div>
+            <span class="amount"><span class="currency">€</span>299</span>
+            <span class="period">Pagamento Unico</span>
+          </div>
+          <ul class="package-features">
+            <li><span class="check">✓</span> Design Premium Responsive</li>
+            <li><span class="check">✓</span> Landing Page Singola (One-Page)</li>
+            <li><span class="check">✓</span> Form Contatti Base</li>
+            <li><span class="check">✓</span> Integrazione Social e Mappe</li>
+            <li><strong style="color: var(--silver);">✓ Sconto Manodopera Applicato</strong></li>
+            <li><span class="check">✓</span> Ottimizzato per Smartphone</li>
+          </ul>
+          <a href="#contatti" class="package-cta">Blocca il Prezzo →</a>
+        </div>
+
+        <!-- Sito Aziendale -->
+        <div class="package-card professional reveal reveal-delay-2 animated-border highlight-card">
+          <div class="package-badge-mini">⚡ Più Redditizio</div>
+          <h3 class="package-name">Sito Aziendale</h3>
+          <p class="package-desc">Il pacchetto completo per PMI. Strutturato per convertire i visitatori in clienti
+            reali.</p>
+          <div class="package-price">
+            <div class="price-discount-tag">💎 Sconto Manodopera Attivo</div>
+            <div
+              style="font-size: 0.9rem; color: var(--text-muted); text-decoration: line-through; margin-bottom: 5px;">
+              Valore: €129,99/mese</div>
+            <span class="amount"><span class="currency">€</span>79<span style="font-size: 1.5rem">,99</span></span>
+            <span class="period">/ mese (impegno 12 mesi)</span>
+          </div>
+          <p class="package-desc"
+            style="font-size: 0.85rem; margin-top: -15px; color: var(--gold-light); font-weight: bold;">
+            *Oppure €699 (Risparmi €500) pagamento unico.
+          </p>
+          <ul class="package-features">
+            <li><span class="check">✓</span> Fino a 8 Pagine Strutturate</li>
+            <li><span class="check">✓</span> <strong>Dominio .COM/.IT Incluso 1° Anno</strong></li>
+            <li><span class="check">✓</span> SEO Base & Collegamenti Social</li>
+            <li><span class="check">✓</span> Manutenzione per non pensare a nulla</li>
+            <li><strong style="color: var(--gold-light);">✓ Sconto Manodopera Applicato</strong></li>
+            <li><span class="check">✓</span> Possibilità Incontro di Persona</li>
+          </ul>
+          <a href="#contatti" class="package-cta glow-button" style="color:#000; font-weight:bold;">Scopri Questo Piano
+            →</a>
+        </div>
+
+        <!-- Sito Funzionale -->
+        <div class="package-card premium reveal reveal-delay-3 animated-border">
+          <div class="package-badge-mini"
+            style="background: var(--steel-glow); color: var(--steel); border-color: rgba(142, 145, 150, 0.4);">⚡
+            Sviluppo Limitless</div>
+          <h3 class="package-name">Web App / Funzionale</h3>
+          <p class="package-desc">Piattaforme interattive e gestionali su misura per logiche di business complesse.</p>
+          <div class="package-price">
+            <div class="price-discount-tag">🔥 Risparmi €840 sul biennio</div>
+            <div
+              style="font-size: 0.9rem; color: var(--text-muted); text-decoration: line-through; margin-bottom: 5px;">
+              Agenzia: €199,99/mese</div>
+            <span class="amount"><span class="currency">€</span>129<span style="font-size: 1.5rem">,99</span></span>
+            <span class="period">/ mese (impegno 24 mesi)</span>
+          </div>
+          <p class="package-desc"
+            style="font-size: 0.85rem; margin-top: -15px; color: var(--text-muted); font-weight: bold;">
+            *Oppure da €1.499 (Invece di €2.499) una tantum.
+          </p>
+          <ul class="package-features">
+            <li><span class="check">✓</span> Pagine e Moduli Avanzati</li>
+            <li><span class="check">✓</span> Dashboard Amministrativa Inclusa</li>
+            <li><span class="check">✓</span> Server Cloud (4 CPU, 4GB RAM) incluso</li>
+            <li><span class="check">✓</span> Sviluppo personalizzato senza limiti</li>
+            <li><span class="check">✓</span> Massima Resa per Logiche Complesse</li>
+            <li><span class="check">✓</span> Consulenza strategica dedicata</li>
+          </ul>
+          <a href="#contatti" class="package-cta">Avanza il Progetto →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ HOSTING ED DOMINI ═══════════ -->
+  <section id="hosting">
+    <div class="container">
+      <div class="hosting-header reveal">
+        <div class="section-tag">Infrastruttura Trasparente</div>
+        <h2 class="section-title">Solo Verità: <span class="gradient-text">Hosting & Domini</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Niente sorprese. Se compri il sito una-tantum o per i
+          rinnovi futuri, ecco cosa costa l'infrastruttura viva su cui gira il sito (basata su Hostinger).</p>
+      </div>
+
+      <div class="hosting-grid" style="margin-top: 40px; margin-bottom: 60px;">
+        <div class="hosting-card reveal reveal-delay-1" id="hostPlan1">
+          <div class="hosting-duration" style="font-size: 1rem; color: var(--silver);">Premium (Siti Vetrina)</div>
+          <div class="hosting-price">€2,99</div>
+          <div class="hosting-period">/ mese (piano 4 anni)</div>
+          <div class="package-features" style="text-align: left; font-size: 0.85rem; margin-top: 20px;">
+            <li><span class="check">✓</span> Prestazioni Solide Iniziali</li>
+            <li><span class="check">✓</span> 100 GB NVMe Velocissimo</li>
+            <li><span class="check">✓</span> Backup settimanali inclusi</li>
+            <li><span class="check">✓</span> Ideale per iniziare</li>
+          </div>
+        </div>
+
+        <div class="hosting-card professional reveal reveal-delay-2" id="hostPlan2" style="transform: scale(1.05);">
+          <div class="hosting-duration" style="font-size: 1rem; color: var(--gold-light);">Business (Massima Velocità)
+          </div>
+          <div class="hosting-price">€3,99</div>
+          <div class="hosting-period">/ mese (piano 4 anni)</div>
+          <div class="package-features" style="text-align: left; font-size: 0.85rem; margin-top: 20px;">
+            <li><span class="check" style="color:var(--blue)">✓</span> Ottimizzato per traffico business</li>
+            <li><span class="check" style="color:var(--blue)">✓</span> 200 GB NVMe Velocissimo</li>
+            <li><span class="check" style="color:var(--blue)">✓</span> Backup GIORNALIERI</li>
+            <li><span class="check" style="color:var(--blue)">✓</span> Global CDN (Caricamento Globale)</li>
+          </div>
+        </div>
+
+        <div class="hosting-card reveal reveal-delay-3" id="hostPlan3">
+          <div class="hosting-duration" style="font-size: 1rem; color: var(--steel);">Cloud Startup (Grandi Progetti)
+          </div>
+          <div class="hosting-price">€8,99</div>
+          <div class="hosting-period">/ mese (piano 2 anni)</div>
+          <div class="package-features" style="text-align: left; font-size: 0.85rem; margin-top: 20px;">
+            <li><span class="check" style="color:var(--steel)">✓</span> Risorse Dedicate Garantite</li>
+            <li><span class="check" style="color:var(--steel)">✓</span> 4 CPU Cores & 4 GB RAM dedicate</li>
+            <li><span class="check" style="color:var(--steel)">✓</span> Indirizzo IP Esclusivo</li>
+            <li><span class="check" style="color:var(--steel)">✓</span> Per e-commerce o app visitatissime</li>
+          </div>
+        </div>
+      </div>
+
+      <!-- Domini -->
+      <div class="domain-section reveal"
+        style="max-width: 900px; margin: 0 auto; background: var(--bg-card); border: 2px solid rgba(197, 160, 89, 0.2); box-shadow: 0 0 20px rgba(197, 160, 89, 0.05); border-radius: var(--radius-md); padding: 30px; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-gold);">
+        </div>
+        <h3 class="service-title" style="text-align: center; margin-bottom: 20px;">Solo Il Vero Costo dei Domini (1°
+          Anno)</h3>
+        <p style="text-align: center; font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 30px;">Paghi solo
+          quello che costa davvero registrare il tuo nome su internet.</p>
+
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+          <div style="text-align: center; padding: 15px; border-radius: 8px; background: rgba(255,255,255,0.02);">
+            <div
+              style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold; color: var(--text-primary);">
+              .COM / .IT</div>
+            <div style="font-size: 1.3rem; color: var(--gold-light); font-weight: bold;">€6,79 <span
+                style="font-size: 0.8rem; color: var(--text-muted); text-decoration: line-through;">€14,98</span></div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">I domini definitivi per
+              aziende.</div>
+          </div>
+          <div style="text-align: center; padding: 15px; border-radius: 8px; background: rgba(255,255,255,0.02);">
+            <div
+              style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold; color: var(--text-primary);">
+              .ORG</div>
+            <div style="font-size: 1.3rem; color: var(--silver); font-weight: bold;">€7,48 <span
+                style="font-size: 0.8rem; color: var(--text-muted); text-decoration: line-through;">€12,98</span></div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Ideale per organizzazioni o
+              no-profit.</div>
+          </div>
+          <div style="text-align: center; padding: 15px; border-radius: 8px; background: rgba(255,255,255,0.02);">
+            <div
+              style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: bold; color: var(--text-primary);">
+              .INFO</div>
+            <div style="font-size: 1.3rem; color: var(--steel); font-weight: bold;">€3,98 <span
+                style="font-size: 0.8rem; color: var(--text-muted); text-decoration: line-through;">€24,98</span></div>
+            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 5px;">Ottimo per spazi puramente
+              informativi.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTATTI ═══════════ -->
+  <section id="contatti">
+    <div class="container">
+      <div class="contact-header reveal">
+        <div class="section-tag">Massima Disponibilità</div>
+        <h2 class="section-title">Contatta un <span class="gradient-text">Esperto</span></h2>
+        <p class="section-subtitle" style="margin: 0 auto;">Sono pieno di appuntamenti, ma dedicherò volentieri del
+          tempo per analizzare la tua situazione gratuitamente e dirti esattamente come possiamo migliorare la tua
+          attività online.</p>
+      </div>
+
+      <div class="contact-grid" style="align-items: center;">
+        <div class="contact-info reveal reveal-delay-1">
+          <div class="contact-item" onclick="window.location.href='mailto:arthurvalles0@gmail.com'"
+            style="cursor:pointer; transition: transform 0.2s; border: 1px solid transparent;"
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(197, 160, 89, 0.3)'"
+            onmouseout="this.style.transform=''; this.style.borderColor='transparent'">
+            <div class="contact-icon">
+              <img
+                src="C:\Users\Utente\.gemini\antigravity\brain\e31a55d5-c579-497d-be56-b8e9f64a98da\gmail_golden_luxury_icon_1773332651545.png"
+                alt="Gmail Golden Icon" style="width: 32px; height: 32px; border-radius: 4px;">
+            </div>
+            <div class="contact-item-text">
+              <h4>Email Diretta</h4>
+              <p>arthurvalles0@gmail.com</p>
+              <span style="font-size: 0.75rem; color: var(--silver);">Clicca per un'email dettagliata</span>
+            </div>
+          </div>
+          <div class="contact-item" onclick="window.open('https://wa.me/393805903302', '_blank')"
+            style="cursor:pointer; transition: transform 0.2s; border: 1px solid transparent;"
+            onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='rgba(197, 160, 89, 0.3)'"
+            onmouseout="this.style.transform=''; this.style.borderColor='transparent'">
+            <div class="contact-icon">
+              <img
+                src="C:\Users\Utente\.gemini\antigravity\brain\e31a55d5-c579-497d-be56-b8e9f64a98da\whatsapp_golden_luxury_icon_1773332637011.png"
+                alt="WhatsApp Golden Icon" style="width: 36px; height: 36px; border-radius: 4px;">
+            </div>
+            <div class="contact-item-text">
+              <h4>WhatsApp Veloce</h4>
+              <p>+39 380 590 3302</p>
+              <span style="font-size: 0.75rem; color: var(--gold-light);">Mandami un messaggio per risposta
+                istantanea!</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"
+              style="font-size: 1.8rem; background: rgba(197, 160, 89, 0.15); border-color: rgba(197, 160, 89, 0.3); color: var(--gold);">
+              <img
+                src="C:\Users\Utente\.gemini\antigravity\brain\e31a55d5-c579-497d-be56-b8e9f64a98da\software_engineering_golden_icon_1773332744615.png"
+                alt="Software Engineering Golden Icon" style="width: 32px; height: 32px; border-radius: 4px;">
+            </div>
+            <div class="contact-item-text">
+              <h4 style="color: var(--gold);">Ingegneria del Software</h4>
+              <p>Web Architect & Technical Expert</p>
+              <span style="font-size: 0.75rem; color: var(--text-secondary);">Logica matematica e rigore tecnico per
+                soluzioni web scalabili e performanti.</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img
+                src="C:\Users\Utente\.gemini\antigravity\brain\e31a55d5-c579-497d-be56-b8e9f64a98da\handshake_golden_icon_1773332758679.png"
+                alt="Handshake Golden Icon" style="width: 32px; height: 32px; border-radius: 4px;">
+            </div>
+            <div class="contact-item-text">
+              <h4>Disponibilità Locale</h4>
+              <p>Sopralluoghi in Presenza</p>
+              <span style="font-size: 0.75rem; color: var(--text-secondary);">Per capire la tua attività sul
+                campo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2"
+          style="background: var(--bg-card); padding: 50px; border-radius: var(--radius-md); border: 2px solid rgba(197, 160, 89, 0.1); box-shadow: 0 10px 40px rgba(0,0,0,0.5); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; position: relative; overflow: hidden;">
+          <div class="hero-orb hero-orb-1"
+            style="width: 200px; height: 200px; top: -100px; right: -100px; opacity: 0.4;"></div>
+
+          <h3 style="font-family: var(--font-heading); font-size: 2rem; margin-bottom: 20px; z-index: 1;">Parliamone
+            <span style="color:var(--gold-light)">Senza Impegno</span>
+          </h3>
+          <p
+            style="color: var(--text-secondary); margin-bottom: 30px; font-size: 1.1rem; line-height: 1.6; z-index: 1;">
+            Saltiamo i classici moduli noiosi. Apri subito WhatsApp cliccando il pulsante qui sotto: descrivimi il tuo
+            negozio o progetto, e ti dirò <strong>come porteremo risultati misurabili</strong> prima che l'offerta
+            scada.</p>
+          <a href="https://wa.me/393805903302" target="_blank" class="form-submit glow-button"
+            style="background: linear-gradient(135deg, #25D366, #128C7E); position: relative; overflow: hidden; color: #fff; font-weight: bold; font-size: 1.2rem; width: 100%; max-width: 350px; margin-bottom: 20px; text-decoration: none; display: flex; align-items: center; justify-content: center; z-index: 1;">
+            <span style="margin-right: 10px; font-size: 1.5rem;">💬</span> Messaggio Diretto su WhatsApp
+          </a>
+          <a href="mailto:arthurvalles0@gmail.com" class="form-submit"
+            style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); width: 100%; max-width: 350px; color: var(--text-primary); text-decoration: none; transition: 0.3s; z-index: 1;"
+            onmouseover="this.style.background='rgba(255,255,255,0.1)'"
+            onmouseout="this.style.background='rgba(255,255,255,0.05)'">
+            Oppure inviami un'email dettagliata
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          NKHUB<span class="logo-dot">.</span>
+        </div>
+        <div class="footer-links">
+          <a href="#metodo">Il Metodo</a>
+          <a href="#pacchetti">Offerte Piani</a>
+          <a href="#hosting">La Verità sull'Hosting</a>
+          <a href="https://wa.me/393805903302">Chatta Ora</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NKHUB. Tutti i diritti riservati. // Passione, Risultati e Cura del Codice 👨‍💻</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

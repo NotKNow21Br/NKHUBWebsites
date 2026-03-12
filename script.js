@@ -5,6 +5,56 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // --- CUSTOM CURSOR ---
+  const cursor = document.createElement('div');
+  cursor.id = 'custom-cursor';
+  const follower = document.createElement('div');
+  follower.id = 'custom-cursor-follower';
+  document.body.appendChild(cursor);
+  document.body.appendChild(follower);
+
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+
+    // Follower with slight delay
+    setTimeout(() => {
+      follower.style.left = e.clientX + 'px';
+      follower.style.top = e.clientY + 'px';
+    }, 50);
+  });
+
+  document.querySelectorAll('a, button, .package-card, .service-card, .hosting-card, .portfolio-card, .faq-question').forEach(el => {
+    el.addEventListener('mouseenter', () => follower.classList.add('cursor-active'));
+    el.addEventListener('mouseleave', () => follower.classList.remove('cursor-active'));
+  });
+
+  // --- PARALLAX ORBS ---
+  document.addEventListener('mousemove', (e) => {
+    const x = (window.innerWidth / 2 - e.pageX) / 40;
+    const y = (window.innerHeight / 2 - e.pageY) / 40;
+    document.querySelectorAll('.hero-orb').forEach(orb => {
+      orb.style.transform = `translate(${x}px, ${y}px)`;
+    });
+  });
+
+  // --- FAQ ACCORDION ---
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('item-active');
+
+      // Close other items
+      faqItems.forEach(i => i.classList.remove('item-active'));
+
+      // Toggle current
+      if (!isActive) {
+        item.classList.add('item-active');
+      }
+    });
+  });
+
   initMatrixRain();
   initTypingAnimation();
   initScrollReveal();
